@@ -1,0 +1,52 @@
+.a1 {
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #8b8b8b1c;
+    resize: none;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #0000007e;
+    outline: none;
+  }
+
+.css-10qua59 {
+    position: absolute;
+    bottom: -0.5rem rem;
+    left: 0px;
+    width: 10rem;
+    height: 10rem;
+    background: url(/images/common/footer/footer_bus.svg) center center / 100% no-repeat;
+    animation: 15s cubic-bezier(0.27, 0.56, 1, 1) 0s infinite normal none running animation-1yn4zbs;
+}
+.a3 {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.a2 {
+  position: relative;
+  display: inline-block;
+  font-size: 22px;
+  padding: 20px 60px;
+  color: white;
+  margin: 20px 10px 10px;
+  border-radius: 6px;
+  text-align: center;
+  transition: top .01s linear;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}

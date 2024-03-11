@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>회원가입 폼</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      border: 1px solid blue;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #45a049;
+      color:aquamarine;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>회원가입 폼</h2>
+  <form action="회원가입처리페이지.html" method="POST">
+    <label for="name">이름:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">이메일 주소:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">비밀번호:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="phone">전화번호:</label>
+    <input type="tel" id="phone" name="phone" required>
+    
+    <label for="birthdate">생년월일:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+    
+    <label for="address">주소:</label>
+    <input type="text" id="address" name="address" required>
+    
+    <input type="submit" value="가입하기">
+  </form>
+</body>
+</html>
