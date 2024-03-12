@@ -10,6 +10,39 @@
     
 </body>
 <script>
-    
+    /* 
+        ES5, ES6
+        JS 타입이 중요하지 않는 언어
+        내부타입 : 숫자형, 문자형, 불린형, 객체형
+    */
+
+    var n1 = 10;
+    console.log('n1:', n1);
+
+    n1 = '안녕';
+    console.log('n1:', n1);
+
+    var n2 = '안녕';
+
+    console.log('n1 == n2:', n1 == n2);
+
+    var n3 = 11;
+    var n4 = '11';
+    console.log('n3 == n4:', n3 == n4); // ==은 타입이 달라도 하나의 타입으로 통과시켜 비교함
+    console.log('n3 === n4:', n3 === n4);
+    var n5 = 11;
+    console.log('n3 === n5:', n3 === n5);//===은 타입도 같고 값도 같아야함
+    //--------------------
+    let n6 = 10;
+    console.log('n6:', n6);
+    n6 = 20;
+    console.log('n6:', n6);
+
+    const n7 = 30;
+    console.log('n7:', n7);
+    // n7 = 40;
+    console.log('n7:', n7);
+
+
 </script>
 </html>
