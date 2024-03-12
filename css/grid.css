@@ -1,0 +1,9 @@
+.container{display: grid;
+    /* grid-template-columns: 100px 5fr 1fr 200px; 간격 */
+    /* grid-template-rows: 100px 200px 300px; 높이 */
+    /* grid-template-columns: 50px repeat(4, 200px); */
+    grid-template-columns: repeat(auto-fill, minmax(20% ,auto));
+    /* grid-template-rows: 100px 200px 300px; */
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    }
+    .item {border: 1px solid #ccc;}
