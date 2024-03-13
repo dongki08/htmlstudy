@@ -1,6 +1,23 @@
 (function() {
     const $listingCardList = document.querySelector('.listing-card__list');
     let page = 1;
+    let timer = null;
+    window.addEventListener('scroll', function() {
+        if(!timer) {
+            timer = setTimeout(function() {
+                timer = null;
+                const {
+                    scrollTop,
+                    scrollHeight,
+                    clientHeight
+                } = document.documentElement;
+                if (scrollTop + clientHeight >= scrollHeight - 5) {
+                    itemLength = 0;
+                    getData();
+                }
+            }, 200);
+        }
+    });
     function getData() {
         const options = {
             method: 'GET',
@@ -10,7 +27,7 @@
             }
           };
           
-          fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page++}&sort_by=popularity.desc`, options)
+          fetch(`https://api.themoviedb.org/3/discover/movie?include_adult=true&include_video=false&language=en-US&page=${page++}&sort_by=popularity.desc`, options)
             .then(response => response.json())
             .then(res => {
                 procList(res.results);
